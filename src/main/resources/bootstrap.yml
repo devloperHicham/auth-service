@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: auth-service # 👈 this must match the file name in config-data: auth-service.yml
+
+  cloud:
+    config:
+      uri: http://localhost:8888 # 👈 config-service URL (where to fetch config)
+
+server:
+  port: 0 # 👈 Spring will pick a random free port for this microservice
+
